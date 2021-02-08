@@ -7,8 +7,8 @@ def test_number_value(browser):
     link = "https://www.avito.ru/sochi/lichnye_veschi?cd=1&d=1"
     
     #данные пользователя для авторизации
-    login = "09andrey26@gmail.com"
-    password = "14101997mama"
+    login = ""
+    password = ""
     
     page = MainPage(browser, link)
     page.open()
