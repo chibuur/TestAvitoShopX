@@ -17,5 +17,4 @@ class ProductPage(BasePage):
         number_form = self.browser.find_element(*ProductPageLocators.NUMBER_FORM)
         self.browser.execute_script("return arguments[0].scrollIntoView(true);", number_form)
         number_value = number_form.get_attribute("value")
-        print(number_value)
-        assert number_value == "true", "Phone field is not empty!"
+        assert "+7" not in number_value, "Phone field is not empty!"
